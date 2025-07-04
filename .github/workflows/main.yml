@@ -50,6 +50,6 @@ jobs:
         git config --global user.name "rexionmars/github-stats"
         git config --global user.email "opensource.leonardi@gmail.com"
         git add .
-        # Force the build to succeed, even if no files were changed
         git commit -m 'Update generated files' || true
-        git push
+        git push --force
+
